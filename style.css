@@ -13,3 +13,19 @@ main section#personal-info img {
     margin: 15px auto 0px;
     border-radius: 100%;
 }
+
+main section#technologies i {
+    font-size: 48px;
+    color: #0d6efd;
+}
+
+main section#technologies i.fa-envira{
+    rotate: 45deg;
+}
+
+main section#technologies div.icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
