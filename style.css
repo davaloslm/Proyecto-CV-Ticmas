@@ -29,3 +29,17 @@ main section#technologies div.icon-container{
     align-items: center;
 }
 
+main section#contact textarea{
+    resize: none;
+}
+
+@media(min-width:768px){
+
+    main section#personal-info img{
+        height: 150px;
+        width: 150px;
+        border-radius: 15px;
+        margin: 15px 1rem 0px;
+    }
+}
+

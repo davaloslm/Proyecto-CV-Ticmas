@@ -9,6 +9,7 @@ window.addEventListener("load", ()=>{
     let phoneNumber = document.querySelector(".phoneNumber");
     let email = document.querySelector(".email");
     let idNumber = document.querySelector(".idNumber");
+    let sendBtn = document.querySelector("#sendBtn")
 
     fetch("https://randomuser.me/api/?gender=male&nat=es&exc=login,registered")
         .then(response => response.json())
@@ -36,6 +37,18 @@ window.addEventListener("load", ()=>{
 
 
         });
+
+    sendBtn.addEventListener("click", ()=>{
+
+        Swal.fire({
+            toast: true,
+            icon: 'success',
+            title: 'Gracias por visitar este proyecto',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+        })
+    })
 
 
 })
